@@ -1,0 +1,24 @@
+import cv2
+tiger = cv2.imread("tiger.jpg")
+tiger.shape
+lion=cv2.imread("lion.jpg")
+lion.shape
+lion = lion[0:307,:]
+lion.shape
+import numpy as np 
+horizontal = np.hstack((tiger,lion))
+cv2.imshow("HORIZONTAL",horizontal)
+cv2.waitKey()
+cv2.destroyAllWindows()
+tiger=cv2.imread("tiger.jpg")
+lion=cv2.imread("lion.jpg")
+tiger = tiger[:,:358] 
+import numpy as np 
+vertical = np.vstack((tiger,lion))
+cv2.imshow("vertical",vertical)
+cv2.waitKey()
+cv2.destroyAllWindows()
+
+
+
+
