@@ -1,0 +1,10 @@
+import numpy as num
+import cv2
+import matplotlib.pyplot as plt
+p = num.zeros((200,500,3))
+p[100:150,100:400]=[0,0,255]
+p[50:100,150:350]= [0,255,0]
+p[0:50,200:300] = [255,0,0]
+cv2.imshow("p.jpg",p)
+cv2.waitKey()
+cv2.destroyAllWindows()
